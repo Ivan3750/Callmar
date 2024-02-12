@@ -1,0 +1,553 @@
+body{
+    background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+
+}
+
+/* *{
+    outline:  2px solid #000;
+} */
+
+
+main{
+    background: linear-gradient(222.36deg, rgb(79, 57, 99) -3.911%,rgb(118, 68, 105) 30.805%,rgb(94, 62, 102) 77.266%,rgb(44, 33, 66) 95.745%);
+}
+
+
+.main__section {
+}
+.header {
+    padding: 0px 75px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+}
+.search {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    
+    background: rgb(215, 92, 120);
+    padding: 10px;
+
+}
+.main__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+
+}
+.main__box-img {
+    display: block;
+    margin: 0px auto;
+    height: 300px;
+}
+.main__box-title {
+    margin-top: 20px;
+    color: rgb(252, 252, 252);
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.main__box-subtitle {
+    padding: 0px 20px;
+    margin-top: 30px;
+    color: rgb(242, 242, 242);
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+max-width: 900px;
+}
+.main__box-btn {
+    margin-top: 60px;
+    border-radius: 5px;
+background: rgb(215, 92, 120);
+border-radius: 5px;
+padding: 20px  30px;
+color: rgb(255, 255, 255);
+font-family: Roboto;
+font-size: 30px;
+font-weight: 400;
+line-height: 42px;
+letter-spacing: 0%;
+text-align: left;
+box-shadow: 2px 2px 20px 8px #603754;
+margin-bottom: 50px;
+
+}
+
+.main__decoration__box{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 196px;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+.main__decoration {
+    position: absolute;
+}
+.main__decoration:nth-child(1){
+    width: 65px;
+    height: 65px;
+    top: 0;
+    left: 0;
+}
+
+.main__decoration:nth-child(2){
+   height: 18px;
+   width: 18px;
+   bottom: 50px;
+   right: 0;
+}
+.main__decoration:nth-child(3){
+   width: 33px;
+   height: 33px;
+   bottom: 0px;
+}
+
+
+.instruction__block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    padding: 0px 20px;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+
+.instruction__decoration{
+    position: absolute;
+}
+.instruction__decoration:nth-child(1){
+    left: 100px;
+    width: 65px;
+    height: 65px;
+}
+.instruction__decoration:nth-child(2){
+    width: 26px;
+    height: 26px;
+    left: 150px;
+    top: 620px;
+}
+.instruction__decoration:nth-child(3){
+    width: 35px;
+    height: 35px;
+    left: 175px;
+    top: 700px;
+}
+.instruction__decoration:nth-child(4){
+    width: 45px;
+    height: 45px;
+    bottom: 320px;
+    right: 120px;
+}
+
+.instruction__box {
+    max-height: 150px;
+    position: relative;
+    padding: 85px 100px 70px 100px;
+    border-radius: 5px;
+width: 350px;
+box-shadow: 5px 22px 33px 0px rgba(0, 0, 0, 0.25);
+background: rgb(82, 58, 100);
+overflow: hidden ;
+}
+.instruction__box:nth-child(2){
+    margin-top: 300px;
+}
+.instruction__box:nth-child(4){
+    margin-top: 290px;
+}
+.instruction__box-number {
+    position: absolute;
+    left: -28px;
+    top: 43px;
+    color: rgb(148, 75, 110);
+    font-family: Roboto;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 113px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.instruction__box-title {
+    color: rgb(242, 242, 242);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+}
+.instruction__box-info {
+    margin-top: 25px;
+    color: rgb(242, 242, 242);
+font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.instruction__section{
+    position: relative;
+    padding: 350px 0px 150px 0px ;
+}
+
+
+.diver{
+    position: absolute;
+}
+
+.diver{
+    top: 100px;
+    right: 100px;
+
+}
+
+.diver_btm{
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+
+
+.instruction__title{
+}
+
+
+.video__section {
+}
+.video__title {
+    color: rgb(246, 246, 246);
+    font-family: Roboto;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 100px;
+}
+.video {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(51, 51, 51);
+    margin-top: 100px;
+}
+
+.submarine{
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 20px;   
+}
+.price__section {
+    padding-top: 250px;
+    position: relative;
+
+}
+
+.price__block{
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.price__box-free, .price__box-paid {
+    padding: 50px 65px;
+    width: 350px;
+    background-image: url(../images/price__background.png);
+    background-size: cover;
+}
+.price__box-free{
+    padding: 40px 65px;
+}
+.price__box-paid{
+    background-image: url(../images/price__background_2.png);
+    padding: 40px 65px;
+}
+.box-free-title, .box-paid-title {
+    color: rgb(255, 255, 255);
+font-family: Roboto;
+font-size: 42px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+.box-free-price, .box-paid-price  {
+    color: rgb(255, 255, 255);
+font-family: Roboto;
+font-size: 30px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.box-free-info, .box-paid-info {
+    margin-top: 40px;
+    color: rgb(242, 242, 242);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+.box-free-btn, .box-paid-btn {
+    margin: 0px auto;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.box-free-btn:hover{
+    background-color: #fff;
+    color: #4B3862;
+}
+.box-paid-btn:hover{
+    background-color: #fff;
+    color: #4B3862;
+}
+
+
+.footer{
+    margin-top: 140px;
+    background-image: url(../images/footer__bg.png);
+    height: 456px;
+    position: relative;    
+}
+
+.fish{
+    position: absolute;
+    width: 300px;
+    left: 20px;
+    top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199.98px){
+    .instruction__block{
+        margin-top: 100px;
+        margin-bottom: 240px;
+    }
+    .instruction__decoration{
+        display: none;
+    }
+    .main__decoration{
+        display: none;
+    }
+    .instruction__box:nth-child(2){
+        margin-top: 0px;
+    }
+    .instruction__box:nth-child(4){
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .main__box-img{
+        height: 200px;
+    }
+}
+
+@media (max-width: 670.98px){
+    .instruction__block{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .diver{
+        display: none;
+    }
+    .diver_btm{
+        display: none;
+    }
+    .main__box-img{
+        height: 150px;
+        margin: 50px 0px;
+    }
+    .main__box-title {
+        margin-top: 18px;
+        color: rgb(252, 252, 252);
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 75px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .main__box-subtitle {
+        padding: 0px 20px;
+        margin-top: 25px;
+        color: rgb(242, 242, 242);
+        font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 900px;
+    margin: 0p;
+    }
+    .main__box-btn{
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .instruction__box-title {
+        color: rgb(242, 242, 242);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+    .instruction__box-info {
+        margin-top: 25px;
+        color: rgb(242, 242, 242);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+    .video__title{
+        font-size: 25px;
+    }
+
+    .box-free-title, .box-paid-title {
+        color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+    .box-free-price, .box-paid-price  {
+        color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+    
+    .box-free-info, .box-paid-info {
+        margin-top: 40px;
+        color: rgb(242, 242, 242);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+    .box-free-btn, .box-paid-btn {
+        margin: 0px auto;
+        margin-top: 100px;
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0%;
+        text-align: left;
+        border: 2px solid #fff;
+        background-color: transparent;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    
+}
