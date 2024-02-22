@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
-
+a:hover{
+    cursor: pointer;
+}
 body{
     background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
 
@@ -59,14 +61,15 @@ main{
     font-size: 16px;
     font-family: Roboto;
 }
+.search-list.show{
+    display: flex!important;
+    flex-direction: column;
+}
 
 .search-list> a{
     color: #000;
 }
 
-.search-list.show{
-    display: block;
-}
 
 .search-img{
     width: 40px;

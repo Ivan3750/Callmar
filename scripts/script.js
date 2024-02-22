@@ -12,13 +12,11 @@ window.addEventListener("scroll", ()=>{
 })
 
 
-
 // SEARCH
 
 let searchInput = document.querySelector('#search')
 let btnSearch = document.querySelector(".search-btn")
-
-
+const searchListShow = document.querySelector('.search-list');
 
 
 let searchList = [
@@ -35,8 +33,69 @@ let searchList = [
 ]
 
 
-btnSearch.addEventListener("click", function(){
 
+searchInput.addEventListener("input",(e)=>{
+    for (const element of searchList) {
+        
+        let inputWord = (element.name).substring(0,e.target.value.length);
+        if(e.target.value.includes(inputWord) && e.target.value.length > 0){
+            console.log("This")
+            ShowSearchList(element.name, element.content, true)
+        }else{
+            
+        }
+    }
+
+})
+
+let ActiveWords = []
+
+function ShowSearchList(element = "", link = "",){
+    if(!ActiveWords.includes(element)){
+        ActiveWords = []
+        searchListShow.innerHTML = ""
+        ActiveWords.push(element)
+        let searchLink = document.createElement("a")
+        searchLink.href = "./search.html"
+        searchLink.textContent= element
+        searchListShow.append(searchLink)
+        let id = document.getElementById(link).outerHTML
+        sessionStorage.setItem("Result", id)
+        searchListShow.classList.add("show")
+        
+    }
+    
+
+
+}
+
+// EVENT BTN => SEARCH WORD IN THE ANOTHER WEBSITE 
+
+
+btnSearch.addEventListener("click", function(){
+    let searchInputValue = searchInput.value.toLowerCase()
+    for(let word of searchList){
+        console.log(word)
+        if(word.name === searchInputValue){
+            let id = document.getElementById(word.content).outerHTML
+            sessionStorage.setItem("Result", id)
+            window.location.href="./search.html";
+            return
+        }
+    }
+    alert('Please enter correct data!');
+
+})
+
+window.addEventListener("click", ()=>{
+    searchListShow.classList.removes("show")
+
+})
+
+// EVENT ENTER => SEARCH WORD IN THE ANOTHER WEBSITE 
+
+window.addEventListener("keydown", function(){
+    if(event.which == 13){
     let searchInputValue = searchInput.value.toLowerCase()
     for(let word of searchList){
         console.log(word)
@@ -49,6 +108,9 @@ btnSearch.addEventListener("click", function(){
         }
         
     }
-    alert('Please enter correct data!');
 
+    alert('Please enter correct data!');
+}
+    
 })
+
